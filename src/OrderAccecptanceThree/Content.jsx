@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
   title: {
     color:"black",
     fontSize: '12px',
-    fontWeight: 500
   },
   caption: {
     color: "black",
@@ -33,7 +32,6 @@ const styles = StyleSheet.create({
   tableTitle: {
     color:"black",
     fontSize: '10px',
-    fontWeight: '500',
     border:'1px solid #d4d4d4',
     padding:'10',
     backgroundColor:'#FFB74D',
@@ -82,7 +80,6 @@ const styles = StyleSheet.create({
   tableCell: {
     color:"#000",
     fontSize: '10px',
-    fontWeight: '500',
     padding:'0',
     lineHeight:'0',
     margin:'0'
@@ -90,7 +87,6 @@ const styles = StyleSheet.create({
   tableContent: {
     color:"black",
     fontSize: '10px',
-    fontWeight: '500',
     border:'1px solid #d4d4d4',
     padding:'10',
     lineHeight:'1',
@@ -207,7 +203,6 @@ const styles = StyleSheet.create({
   },
   fs10:{
     fontSize: '10',
-    fontWeight:'500',
   },
   fs12:{
     fontSize: '12',
@@ -231,14 +226,18 @@ const styles = StyleSheet.create({
   signpt:{
     paddingTop:'50px',
   },
-  fw5:{
-    fontWeight:'500',
-  },
-  fw7:{
-    fontWeight:"bold",
-  },
   padding10:{
     padding:' 10px 0px 10px 0px',
+  },
+  fw5:{
+    fontFamily: "Roboto-Bold",
+  },
+
+  tableContent1: {
+    fontSize: '10px',
+    border:'1px solid #d4d4d4',
+    padding:'6',
+    lineHeight:'1.4',
   },
   
 
@@ -271,24 +270,24 @@ const Content = () => {
           <View style={[styles.table]}>
 
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Installation</Text>
-                <Text style={[styles.tabwth75]}>With in ONE Months from the date of Invoice Compulsory,</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Installation</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>With in ONE Months from the date of Invoice Compulsory,</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Warrnty Period</Text>
-                <Text style={[styles.tabwth75]}>The supplied machine is under warranty for ONE YEAR any manufacturing defects and We Are Not Responsible For Any Darnage To The Ejector Valves And Pneumatic Parts Due To Oil And Water Particles Present In The Compressed Air.</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Warrnty Period</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>The supplied machine is under warranty for ONE YEAR any manufacturing defects and We Are Not Responsible For Any Darnage To The Ejector Valves And Pneumatic Parts Due To Oil And Water Particles Present In The Compressed Air.</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Note:</Text>
-                <Text style={[styles.tabwth75]}>1. Before one week please inform to our Service Team for Machine Run. Contact No: 9994399005 </Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Note:</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>1. Before one week please inform to our Service Team for Machine Run. Contact No: 9994399005 </Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}></Text>
-                <Text style={[styles.tabwth75]}>2. Please contact our Marketing Executive: ILAYARAJA.B8489935205 for Cabin and Pipe Line related works also we have attached the Cabin drawing for your reference.</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}></Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>2. Please contact our Marketing Executive: ILAYARAJA.B8489935205 for Cabin and Pipe Line related works also we have attached the Cabin drawing for your reference.</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Extra Attachment</Text>
-                <Text style={[styles.tabwth75]}>STABILIZER, DUCT, CONNECTING PIPES, COUPLING AND ANTI VIBRATION MOUNT..</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Extra Attachment</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>STABILIZER, DUCT, CONNECTING PIPES, COUPLING AND ANTI VIBRATION MOUNT..</Text>
             </View>
             
           </View>   
@@ -304,7 +303,7 @@ const Content = () => {
       </View>
 
       <View>
-        <Text style={[styles.fs12, styles.fw7, styles.txtcntr]}>GSTIN: 33AAGCP3472Q1ZX</Text>
+        <Text style={[styles.fs12, styles.fw7, styles.txtcntr,styles.fw5]}>GSTIN: 33AAGCP3472Q1ZX</Text>
       </View>
 
     </View>

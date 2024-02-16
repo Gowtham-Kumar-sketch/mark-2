@@ -4,6 +4,10 @@ import { Page, View, Document, StyleSheet } from '@react-pdf/renderer';
 // project import
 import Header from './Header';
 import Content from './Content';
+
+
+
+
 const styles = StyleSheet.create({
   page: {
     padding: 10

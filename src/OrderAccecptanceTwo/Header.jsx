@@ -2,10 +2,18 @@
 // third-party
 import { Text, View, Image, StyleSheet, } from '@react-pdf/renderer';
 import logoImage from '../assets/images/logo.png';
+import RobotoBold from '../assets/fonts/Roboto/Roboto-Bold.ttf';
+import { Font } from '@react-pdf/renderer';
+
 // assets
 // import Logo from 'assets/images/image.png';
 const textPrimary = '#262626';
 const textSecondary = '#8C8C8C';
+
+
+Font.register({ family: 'Roboto-Bold', src: RobotoBold });
+
+
 const styles = StyleSheet.create({
 
   container: {
@@ -20,29 +28,29 @@ const styles = StyleSheet.create({
   detailColumn: {
     marginBottom: '12px',
     flexDirection: 'column',
-    flexGrow: 2
+    flexGrow: 2,
   },
   chipTitle: {
     fontSize: '8px',
-    padding: 4
+    padding: 4,
   },
   chip: {
     alignItems: 'center',
     borderRadius: '4px',
     marginLeft: 52,
     marginRight: 4,
-    marginBottom: 8
+    marginBottom: 8,
   },
   leftColumn: {
     flexDirection: 'column',
     width: 36,
     marginRight: 10,
     paddingLeft: 4,
-    marginTop: 4
+    marginTop: 4,
   },
   image: {
     width: 90,
-    height: 28
+    height: 28,
   },
   mainContainer: {
     flexDirection: 'column',
@@ -53,10 +61,17 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-end'
   },
+
   title: {
     color: textPrimary,
-    fontSize: '10px'
+    fontSize: '10px',
+    padding: '5',
   },
+
+  fw5:{
+    fontFamily: "Roboto-Bold",
+  },
+
   caption: {
     color: textSecondary,
     fontSize: '10px'
@@ -75,7 +90,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'left',
     width: '100%',
-    marginTop: '0',
+    marginTop: '10',
   },
   head3:{
     marginTop: '0',
@@ -93,17 +108,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
 
-  title:{
-    fontSize: '12',
-    fontWeight: 'bold',
-    padding: '5',
-  },
-
   title1:{
     backgroundColor:'#FFB74D',
     fontSize: '13',
     marginBottom:'6px',
-    fontWeight: 'bold',
   },
   title2:{
     backgroundColor:'#FFB74D',
@@ -112,7 +120,6 @@ const styles = StyleSheet.create({
   },
   description:{
     fontSize: '10',
-    fontWeight: '400',
     padding: '0',
     lineHeight:'1.4',
   },
@@ -146,12 +153,10 @@ const styles = StyleSheet.create({
   paddingy:{
     paddingVertical:'4',     
   },
-  bold:{
-    fontWeight:'bold',
-  },
   padb:{
     paddingBottom: '2px',
   },
+
 
 });
 
@@ -164,9 +169,9 @@ const Header = () => {
         
         <View style={[styles.head2, styles.border ]}>
             <View style={[styles.head2_con1,]}>
-              <Text style={[styles.title, styles.title1, styles.paddingy ]}>PROMECH INDUSTRIES PRIVATE LIMITED</Text>
+              <Text style={[styles.title, styles.title1, styles.paddingy, styles.fw5]}>PROMECH INDUSTRIES PRIVATE LIMITED</Text>
               <Text style={[styles.description, styles.paddingx]}>7/237 A, Pattanam to Peedampalli Main Road, Nagamanaickenpalayam,{'\n'} Coimbatore - 641016, Tamil Nadu, India.</Text>
-              <Text style={[styles.description, styles.paddingx, styles.padb,]}>Cell : +91 99943 99996 | +91 99943 99006  {'\n'} Email : promech5@yahoo.co.in | Web: www.marksorter.com </Text>
+              <Text style={[styles.description, styles.paddingx, styles.padb,]}><Text style={[styles.fw5,]}>Cell :</Text> +91 99943 99996 | +91 99943 99006{'\n'}<Text style={[styles.fw5,]}>Email :</Text> promech5@yahoo.co.in |<Text style={[styles.fw5,]}> Web:</Text> www.marksorter.com </Text>
             </View>
             <View style={[styles.head2_con2]}>
                 <Image src={logoImage} style={[styles.image, styles.logoImages]} />

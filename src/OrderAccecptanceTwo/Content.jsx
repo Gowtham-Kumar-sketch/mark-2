@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
   title: {
     color:"black",
     fontSize: '12px',
-    fontWeight: 500
   },
   caption: {
     color: "black",
@@ -32,8 +31,7 @@ const styles = StyleSheet.create({
   },
   tableTitle: {
     color:"black",
-    fontSize: '9px',
-    fontWeight: '500',
+    fontSize: '10px',
     border:'1px solid #d4d4d4',
     padding:'6',
     backgroundColor:'#FFB74D',
@@ -82,7 +80,6 @@ const styles = StyleSheet.create({
   tableCell: {
     color:"#000",
     fontSize: '10px',
-    fontWeight: '500',
     padding:'0',
     lineHeight:'0',
     margin:'0'
@@ -90,7 +87,6 @@ const styles = StyleSheet.create({
   tableContent: {
     color:"black",
     fontSize: '10px',
-    fontWeight: '500',
     border:'1px solid #d4d4d4',
     padding:'10',
     lineHeight:'1',
@@ -207,7 +203,6 @@ const styles = StyleSheet.create({
   },
   fs10:{
     fontSize: '10',
-    fontWeight:'500',
   },
   fs12:{
     fontSize: '12',
@@ -231,14 +226,19 @@ const styles = StyleSheet.create({
   signpt:{
     paddingTop:'50px',
   },
-  fw5:{
-    fontWeight:'500',
-  },
-  fw7:{
-    fontWeight:"bold",
-  },
   padding10:{
     padding:' 10px 0px 10px 0px',
+  },
+
+  fw5:{
+    fontFamily: "Roboto-Bold",
+  },
+
+  tableContent1: {
+    fontSize: '10px',
+    border:'1px solid #d4d4d4',
+    padding:'6',
+    lineHeight:'1',
   },
   
 
@@ -271,72 +271,78 @@ const Content = () => {
           <View style={[styles.table]}>
 
             <View style={[styles.tableflex]}>
-              <Text style={[styles.tabwth1]}>BILLING DETAILS:</Text>
+              <Text style={[styles.tabwth1,styles.fw5]}>BILLING DETAILS:</Text>
             </View>
 
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Rate</Text>
-                <Text style={[styles.tabwth75]}>904762.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Rate</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>904762.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Tax (%)</Text>
-                <Text style={[styles.tabwth75]}>45238.00 & 5.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Tax (%)</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>45238.00 & 5.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>IGST</Text>
-                <Text style={[styles.tabwth75]}>0.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>IGST</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>0.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>CGST</Text>
-                <Text style={[styles.tabwth75]}>22619.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>CGST</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>22619.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>SGST</Text>
-                <Text style={[styles.tabwth75]}>22619.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>SGST</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>22619.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Total Bill Amt</Text>
-                <Text style={[styles.tabwth75]}>950000.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Total Bill Amt</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>950000.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Erection Charges</Text>
-                <Text style={[styles.tabwth75]}>0.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Erection Charges</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>0.00</Text>
             </View>
           </View>  
 
       <View style={[styles.brdr1, styles.table ]}>
 
         <View style={[styles.tableflex]}>
-          <Text style={[styles.tabwth1]}>PAYMENT DETAILS:</Text>
+          <Text style={[styles.tabwth1, styles.fw5]}>PAYMENT DETAILS:</Text>
         </View>
 
         <View style={[styles.row, styles.tableHeader,]}>
-          <Text style={[styles.tableTitle, styles.flex20]}>Due</Text>
-          <Text style={[styles.tableTitle, styles.flex08,]}>Due Amt Rs.</Text>
-          <Text style={[styles.tableTitle, styles.flex11,]}>Due Date</Text>
-          <Text style={[styles.tableTitle, styles.flex11,]}>Status</Text>
-          <Text style={[styles.tableTitle, styles.flex11,]}>Pay Type</Text>
+          <Text style={[styles.tableTitle, styles.flex12, styles.fw5]}>Due</Text>
+          <Text style={[styles.tableTitle, styles.flex12, styles.fw5]}>Due Amt</Text>
+          <Text style={[styles.tableTitle, styles.flex10, styles.fw5]}>Due Date</Text>
+          <Text style={[styles.tableTitle, styles.flex10, styles.fw5]}>Status</Text>
+          <Text style={[styles.tableTitle, styles.flex14, styles.fw5]}>Expected Due Date</Text>
+          <Text style={[styles.tableTitle, styles.flex10, styles.fw5]}>Pay Type</Text>
+          <Text style={[styles.tableTitle, styles.flex12, styles.fw5]}>Cheque No</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1 ]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>1. Advance-1</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex08,]}>100000.00</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>26/05/2022</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>Received</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>NEFT</Text>
+            <Text style={[styles.tableContent1, styles.flex12]}>1. Advance-1</Text>
+            <Text style={[styles.tableContent1, styles.flex12,]}>100000.00</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>26/05/2022</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>Received</Text>
+            <Text style={[styles.tableContent1, styles.flex14,]}>26/05/2022</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>NEFT</Text>
+            <Text style={[styles.tableContent1, styles.flex12,]}>5465424256</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1 ]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>2. Before Delivery Machine</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex08,]}>850000.00</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>21/06/2022</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>Pending</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>RTGS</Text>
+            <Text style={[styles.tableContent1, styles.flex12]}>2. Before Delivery Machine</Text>
+            <Text style={[styles.tableContent1, styles.flex12,]}>850000.00</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>21/06/2022</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>Pending</Text>
+            <Text style={[styles.tableContent1, styles.flex14,]}>26/05/2022</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>RTGS</Text>
+            <Text style={[styles.tableContent1, styles.flex12,]}>5465424256</Text>
         </View>
 
         <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>After Dispatch</Text>
-                <Text style={[styles.tabwth75]}>0.00</Text>
+                <Text style={[styles.flex09,styles.tableContent1]}>After Dispatch</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>0.00</Text>
             </View>
         
       </View>
@@ -344,23 +350,27 @@ const Content = () => {
       <View style={[styles.brdr1, styles.table ]}>
 
         <View style={[styles.tableflex]}>
-          <Text style={[styles.tabwth1]}>DUE PAYMENT TERMS:</Text>
+          <Text style={[styles.tabwth1, styles.fw5]}>DUE PAYMENT TERMS:</Text>
         </View>
 
         <View style={[styles.row, styles.tableHeader,]}>
-          <Text style={[styles.tableTitle, styles.flex20]}>Due</Text>
-          <Text style={[styles.tableTitle, styles.flex08,]}>Due Amt Rs.</Text>
-          <Text style={[styles.tableTitle, styles.flex11,]}>Due Date</Text>
-          <Text style={[styles.tableTitle, styles.flex11,]}>Status</Text>
-          <Text style={[styles.tableTitle, styles.flex11,]}>Pay Type</Text>
+          <Text style={[styles.tableTitle, styles.flex12, styles.fw5]}>Due</Text>
+          <Text style={[styles.tableTitle, styles.flex12, styles.fw5]}>Due Amt</Text>
+          <Text style={[styles.tableTitle, styles.flex10, styles.fw5]}>Due Date</Text>
+          <Text style={[styles.tableTitle, styles.flex10, styles.fw5]}>Status</Text>
+          <Text style={[styles.tableTitle, styles.flex14, styles.fw5]}>Expected Due Date</Text>
+          <Text style={[styles.tableTitle, styles.flex10, styles.fw5]}>Pay Type</Text>
+          <Text style={[styles.tableTitle, styles.flex12, styles.fw5]}>Cheque No</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1 ]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>1. Advance-1</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex08,]}>100000.00</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>26/05/2022</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>Received</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex11,]}>NEFT</Text>
+            <Text style={[styles.tableContent1, styles.flex12]}>1. Advance-1</Text>
+            <Text style={[styles.tableContent1, styles.flex12,]}>100000.00</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>26/05/2022</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>Received</Text>
+            <Text style={[styles.tableContent1, styles.flex14,]}>26/05/2022</Text>
+            <Text style={[styles.tableContent1, styles.flex10,]}>NEFT</Text>
+            <Text style={[styles.tableContent1, styles.flex12,]}>5465424256</Text>
         </View>
         
       </View>     
@@ -376,7 +386,7 @@ const Content = () => {
       </View>
 
       <View>
-        <Text style={[styles.fs12, styles.fw7, styles.txtcntr]}>GSTIN: 33AAGCP3472Q1ZX</Text>
+        <Text style={[styles.fs12, styles.fw7, styles.txtcntr, styles.fw5]}>GSTIN: 33AAGCP3472Q1ZX</Text>
       </View>
 
     </View>

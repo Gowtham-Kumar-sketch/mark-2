@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   title: {
     color:"black",
     fontSize: '10px',
-    fontWeight: 500
+    fontFamily: "Roboto-Bold",
   },
   caption: {
     color: "black",
@@ -32,8 +32,7 @@ const styles = StyleSheet.create({
   },
   tableTitle: {
     color:"black",
-    fontSize: '9px',
-    fontWeight: '500',
+    fontSize: '10px',
     border:'1px solid #d4d4d4',
     padding:'6',
     backgroundColor:'#FFB74D',
@@ -83,18 +82,15 @@ const styles = StyleSheet.create({
   tableCell: {
     color:"#000",
     fontSize: '10px',
-    fontWeight: '500',
     padding:'0',
     lineHeight:'0',
     margin:'0'
   },
   tableContent: {
-    color:"black",
     fontSize: '10px',
-    fontWeight: '500',
     border:'1px solid #d4d4d4',
     padding:'10',
-    lineHeight:'1',
+    lineHeight:'1.4',
   },
 
   bnk_det:{
@@ -208,7 +204,6 @@ const styles = StyleSheet.create({
   },
   fs10:{
     fontSize: '10',
-    fontWeight:'500',
   },
   fs12:{
     fontSize: '12',
@@ -232,15 +227,21 @@ const styles = StyleSheet.create({
   signpt:{
     paddingTop:'50px',
   },
-  fw5:{
-    fontWeight:'500',
-  },
-  fw7:{
-    fontWeight:"bold",
-  },
   padding6:{
     padding:' 6px 0px 6px 0px',
   },
+  fw5:{
+    fontFamily: "Roboto-Bold",
+  },
+
+  tableContent1: {
+    fontSize: '9px',
+    border:'1px solid #d4d4d4',
+    padding:'6',
+    lineHeight:'1',
+  },
+  
+
   
 
 
@@ -281,44 +282,44 @@ const Content = () => {
           <View style={[styles.table]}>
 
             <View style={[styles.tableflex]}>
-              <Text style={[styles.tabwth1]}>CUSTOMER DETAILS & MACHINE MODELS:</Text>
+              <Text style={[styles.tabwth1, styles.fw5,]}>CUSTOMER DETAILS & MACHINE MODELS:</Text>
             </View>
 
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Order No. & Date </Text>
-                <Text style={[styles.tabwth75]}>p/DEL/22-23/000042 & 21/06/2022</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Order No. & Date </Text>
+                <Text style={[styles.flex20,styles.tableContent1,]}>p/DEL/22-23/000042 & 21/06/2022</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Executive Name & Ph.No.</Text>
-                <Text style={[styles.tabwth75]}>ILAYARAJA.B & 8489935205</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Executive Name & Ph.No.</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>ILAYARAJA.B & 8489935205</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Customer Name</Text>
-                <Text style={[styles.tabwth75]}>SANKA DHALL MILL</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Customer Name</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>SANKA DHALL MILL</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>State</Text>
-                <Text style={[styles.tabwth75]}>TAMILNADU</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>State</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>TAMILNADU</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>GSTIN</Text>
-                <Text style={[styles.tabwth75]}>33AAFFS4878M1ZL</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>GSTIN</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>33AAFFS4878M1ZL</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Contact Person</Text>
-                <Text style={[styles.tabwth75]}>MR.SENTHIL NARAYANAN</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Contact Person</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>MR.SENTHIL NARAYANAN</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Designation</Text>
-                <Text style={[styles.tabwth75]}>PROP</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Designation</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>PROP</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Registered Contact No</Text>
-                <Text style={[styles.tabwth75]}>9442612677</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Registered Contact No</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>9442612677</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Email ID</Text>
-                <Text style={[styles.tabwth75]}></Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Email ID</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}></Text>
             </View>
 
           </View>  
@@ -326,71 +327,71 @@ const Content = () => {
       <View style={[styles.brdr1]}>
 
         <View style={[styles.row, styles.tableHeader,]}>
-          <Text style={[styles.tableTitle, styles.flex20]}>Machine Modal</Text>
-          <Text style={[styles.tableTitle, styles.flex07, styles.txtcntr]}>Camara</Text>
-          <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr]}>Frame</Text>
-          <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr]}>Channel/Ejectores</Text>
-          <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr]}>Rate</Text>
+          <Text style={[styles.tableTitle, styles.flex20,styles.fw5]}>Machine Modal</Text>
+          <Text style={[styles.tableTitle, styles.flex07, styles.txtcntr,styles.fw5]}>Camara</Text>
+          <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr,styles.fw5]}>Frame</Text>
+          <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr,styles.fw5]}>Channel/Ejectores</Text>
+          <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr,styles.fw5]}>Rate</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1 ]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Trendz T20-2 Chute </Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex07, styles.txtcntr]}>4 Nos. (2 front side, 2 rear side)</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>1+1</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>126/126</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>700000.00</Text>
+            <Text style={[styles.tableContent1, styles.flex20]}>Trendz T20-2 Chute </Text>
+            <Text style={[styles.tableContent1, styles.flex07, styles.txtcntr]}>4 Nos. (2 front side, 2 rear side)</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>1+1</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>126/126</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>700000.00</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1 ]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Trendz T20-2 Chute </Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex07, styles.txtcntr]}>4 Nos. (2 front side, 2 rear side)</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>1+1</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>126/126</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>700000.00</Text>
+            <Text style={[styles.tableContent1, styles.flex20]}>Trendz T20-2 Chute </Text>
+            <Text style={[styles.tableContent1, styles.flex07, styles.txtcntr]}>4 Nos. (2 front side, 2 rear side)</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>1+1</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>126/126</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>700000.00</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1 ]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Trendz T20-2 Chute </Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex07, styles.txtcntr]}>4 Nos. (2 front side, 2 rear side)</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>1+1</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>126/126</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.txtcntr]}>700000.00</Text>
+            <Text style={[styles.tableContent1, styles.flex20]}>Trendz T20-2 Chute </Text>
+            <Text style={[styles.tableContent1, styles.flex07, styles.txtcntr]}>4 Nos. (2 front side, 2 rear side)</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>1+1</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>126/126</Text>
+            <Text style={[styles.tableContent1, styles.flex14, styles.txtcntr]}>700000.00</Text>
         </View>
         
       </View>
 
       <View style={[styles.table]}>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Tax</Text>
-                <Text style={[styles.tabwth75]}>45238.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Tax</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>45238.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Packing and Forwarding</Text>
-                <Text style={[styles.tabwth75]}>0.00</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Packing and Forwarding</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>0.00</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Chute Distribution</Text>
-                <Text style={[styles.tabwth75]}>Primary 63, Secondary 63</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Chute Distribution</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>Primary 63, Secondary 63</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Special Features</Text>
-                <Text style={[styles.tabwth75]}>.OLD MACHINE EXCHANGE MARK TRENDZ M SERIES 2 CHUTE</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Special Features</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>.OLD MACHINE EXCHANGE MARK TRENDZ M SERIES 2 CHUTE</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Commodity</Text>
-                <Text style={[styles.tabwth75]}>Dall</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Commodity</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>Dall</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth1]}>CAPACITY:</Text>
-                <Text style={[]}></Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>CAPACITY:</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}></Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Output Tonnage</Text>
-                <Text style={[styles.tabwth75]}>1.0 TON </Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Output Tonnage</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>1.0 TON </Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.tabwth25]}>Input Contamination Ratio</Text>
-                <Text style={[styles.tabwth75]}>1 TO 2% If the contamination percentage increased, the processing capacity will be decreased.</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Input Contamination Ratio</Text>
+                <Text style={[styles.flex20,styles.tableContent1]}>1 TO 2% If the contamination percentage increased, the processing capacity will be decreased.</Text>
             </View>
       </View>
 
@@ -405,7 +406,7 @@ const Content = () => {
       </View>
 
       <View>
-        <Text style={[styles.fs12, styles.fw7, styles.txtcntr]}>GSTIN: 33AAGCP3472Q1ZX</Text>
+        <Text style={[styles.fs12, styles.fw7, styles.txtcntr,styles.fw5,]}>GSTIN: 33AAGCP3472Q1ZX</Text>
       </View>
 
  
