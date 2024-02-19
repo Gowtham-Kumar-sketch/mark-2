@@ -274,7 +274,7 @@ const Content = () => {
                 <Text style={[styles.flex20,styles.tableContent1]}>With in ONE Months from the date of Invoice Compulsory,</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>
-                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>Warrnty Period</Text>
+                <Text style={[styles.flex10,styles.tableContent1,styles.fw5]}>warranty Period</Text>
                 <Text style={[styles.flex20,styles.tableContent1]}>The supplied machine is under warranty for ONE YEAR any manufacturing defects and We Are Not Responsible For Any Darnage To The Ejector Valves And Pneumatic Parts Due To Oil And Water Particles Present In The Compressed Air.</Text>
             </View>
             <View style={[styles.tableflex, styles.tableflex1 ]}>

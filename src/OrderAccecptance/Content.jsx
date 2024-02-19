@@ -327,8 +327,8 @@ const Content = () => {
       <View style={[styles.brdr1]}>
 
         <View style={[styles.row, styles.tableHeader,]}>
-          <Text style={[styles.tableTitle, styles.flex20,styles.fw5]}>Machine Modal</Text>
-          <Text style={[styles.tableTitle, styles.flex07, styles.txtcntr,styles.fw5]}>Camara</Text>
+          <Text style={[styles.tableTitle, styles.flex20,styles.fw5]}>Machine Model</Text>
+          <Text style={[styles.tableTitle, styles.flex07, styles.txtcntr,styles.fw5]}>camera</Text>
           <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr,styles.fw5]}>Frame</Text>
           <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr,styles.fw5]}>Channel/Ejectores</Text>
           <Text style={[styles.tableTitle, styles.flex14, styles.txtcntr,styles.fw5]}>Rate</Text>
